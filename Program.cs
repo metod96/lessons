@@ -60,7 +60,7 @@ namespace test
 
         }else cnt_f1 = 0;
 
-        Console.WriteLine("formula_1();  E =  " + E.ToString("0.00"));
+        Console.WriteLine("Оценка средней трудоемкости  E =  " + E.ToString("0.00"));
 
       }
 
@@ -77,7 +77,7 @@ namespace test
 
         }else cnt_f2 = 0;
 
-        Console.WriteLine("formula_2(); CKO =  " + CKO.ToString("0.00"));
+        Console.WriteLine("Среднеквадратичное отклонение СКО=  " + CKO.ToString("0.00"));
 
       }
 
@@ -97,7 +97,7 @@ namespace test
         
        
 
-        Console.WriteLine("formula_3(); summa E =  " + summa_E.ToString("0.00") );
+        Console.WriteLine("Суммарная трудоемкость кодирования E =  " + summa_E.ToString("0.00") );
 
       }
 
@@ -122,7 +122,7 @@ static  void formula_4(){
             CKO_k = (float)Math.Pow(sCKO, 0.5);
        
 
-        Console.WriteLine("formula_4(); summa CKO_k =  " + CKO_k.ToString("0.00") );
+        Console.WriteLine("Среднеквадратичное отклонение для оценки суммарной трудоемкости кодирования CKO_k =  " + CKO_k.ToString("0.00") );
 
       }
 
@@ -134,7 +134,7 @@ static  void formula_5(){
         E_95 = summa_E  + 2*CKO_k;
 
 
-        Console.WriteLine("formula_5(); summa E_95 =  " + E_95.ToString("0.00") );
+        Console.WriteLine("Оценка суммарной трудоемкости кодирования summa E_95 =  " + E_95.ToString("0.00") );
 
       }
 
@@ -144,7 +144,7 @@ static  void formula_6(){
      
           float delta = (CKO_k /summa_E)*100;
        
-           Console.WriteLine("formula_6(); delta =  " + delta.ToString("0.00") + "%" );
+           Console.WriteLine("Относительная погрешность в оценке суммарной трудоемкости кодирования delta =  " + delta.ToString("0.00") + "%" );
 
         }
 
@@ -154,7 +154,7 @@ static  void formula_7(){
      
            E_all = E_95*4;
        
-           Console.WriteLine("formula_7(); delta =  " + E_all.ToString("0.00") );
+           Console.WriteLine("Общая трудоемкость проекта delta =  " + E_all.ToString("0.00") );
 
         }
 
@@ -164,7 +164,7 @@ static  void formula_8(){
      
            N = E_all/132;
        
-           Console.WriteLine("formula_8(); N =  " + N.ToString("0.00") );
+           Console.WriteLine("Пересчет в человеко-месяцы N =  " + N.ToString("0.00") );
 
         }
 
@@ -173,7 +173,7 @@ static  void formula_9(){
      
            T =  (float)Math.Pow(N*2.5, (float)(1)/3);
 
-           Console.WriteLine("formula_9(); T =  " + T.ToString("0.00") );
+           Console.WriteLine("Оптимальная продолжительность проекта; T =  " + T.ToString("0.00") );
 
         }
 
@@ -181,7 +181,7 @@ static  void formula_10(){
      
            float K =  N/T;
 
-           Console.WriteLine("formula_10(); K =  " + K.ToString("0.00") );
+           Console.WriteLine("Средняя численность команды; K =  " + K.ToString("0.00") );
 
         }
 
