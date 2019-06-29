@@ -24,7 +24,7 @@ namespace test
             formula_1(Obj_pi, Obj_mi, Obj_oi, 16);
             formula_1(Metd_pi, Metd_mi, Metd_oi, 40);
 
-            //----------------------------------------
+            
 
             formula_2(Ui_pi, Ui_mi, Ui_oi, 20);
             formula_2(Act_pi, Act_mi, Act_oi, 60);
