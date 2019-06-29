@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 
 namespace test
@@ -16,9 +16,7 @@ namespace test
             int Metd_pi = 26, Metd_mi = 6, Metd_oi = 2, Metd_q = 40;
 
         
-            //int cnt_f2 = 0;
-            //MyClass c1 = new MyClass();
-     
+            
             formula_1(Ui_pi, Ui_mi, Ui_oi, 20);
             formula_1(Act_pi, Act_mi, Act_oi, 60);
             formula_1(Obj_pi, Obj_mi, Obj_oi, 16);
@@ -31,8 +29,7 @@ namespace test
             formula_2(Obj_pi, Obj_mi, Obj_oi, 16);
             formula_2(Metd_pi, Metd_mi, Metd_oi, 40);
 
-            //----------------------------------------
-
+        
             formula_3();
             formula_4();
             formula_5();
@@ -66,7 +63,6 @@ namespace test
 
 
 
-
       static  void formula_2(int pi, int mi, int oi, int q){
 
         float CKO = (float)(pi - oi)/6;
@@ -91,7 +87,7 @@ namespace test
           
           summa_E  += sum_E[i];
 
-          //Console.WriteLine("= " + sum_E[i].ToString("0.00") );
+          
 
         }
         
@@ -115,7 +111,7 @@ static  void formula_4(){
           
           sCKO += (float)Math.Pow(sum_SCO[i], 2);
 
-          //Console.WriteLine("= " + sum_E[i].ToString("0.00") );
+        
 
         }
         
